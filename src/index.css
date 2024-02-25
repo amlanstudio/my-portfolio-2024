@@ -62,6 +62,7 @@ div{
 
 .navbar a:hover{
   color:#e68057;
+  transition: 0.5s;
 }
 
 /* Home Presentation */
@@ -129,26 +130,6 @@ div{
   grid-gap: 30px;
   margin:auto;
 }
-
-/* button{
-  height: 3em;
-  width:10em;
-  border-radius: 5px;
-  background-color: #859125;
-  color:#fefaef;
-  border:none;
-  margin: 0;
-  font-size: 1.3em;
-}
-
-button :hover{
-  background-color: #ff9b21;
-  color:#fefaef;
-  border: none;
-  transform: scale(1.1);
-  cursor: pointer;
-  transition: 0.75s;
-} */
 
 .home-presentation button{
   height: 3em;
@@ -276,13 +257,17 @@ button :hover{
   background-color: #ffffff;
 }
 
-.css-1knaqv7-MuiButtonBase-root-MuiButton-root{
+/* .css-1knaqv7-MuiButtonBase-root-MuiButton-root{
   background-color: #ffffff;
   color:red;
 }
 
 .showmore{
   color:red !important;
+} */
+
+span{
+  background-color: #e68057;
 }
 
 .to-realisations{
@@ -374,6 +359,29 @@ label {
 }
 .invitation p{
  text-align: justify;
+}
+
+/* -----Presentation Page ---- */
+.parcours-vie h3{
+  font-size: 3em;
+  margin-bottom: 1em ;
+}
+
+.graphics{
+  display: flex;
+  justify-content: space-between;
+}
+
+.savoir-etre{
+  border:solid 4px #859125;
+  border-radius: 15px;
+  padding:15px;
+}
+
+.savoir-faire{
+  border:solid 4px #ff9b21;
+  border-radius: 15px;
+  padding:15px;
 }
 
 /* ----Footer- ------ */
