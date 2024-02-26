@@ -39,7 +39,8 @@ const Contact = () => {
                 <h2>Me contacter ! </h2>
                 <div className="formulaire-zone">
                     <div className="invitation">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ut, porro repudiandae et delectus est itaque quae ipsum quidem eligendi temporibus, neque nemo praesentium eius numquam aut sit, accusamus possimus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ut, porro repudiandae et delectus est itaque quae ipsum quidem eligendi temporibus, neque nemo praesentium eius numquam aut sit, accusamus possimus!</p>
+                        <p>Des clubs sportifs aux ateliers dessins, du thé au café, je m’adonne à toutes les possibilités ! Peu importe le domaine, je me faufile, trouve ma place et m’adapte. Je suis un véritable couteau-suisse !
+                        <br/><br/>Captivé.e ? Et si on se recontrait, plutôt thé ou café ?</p>
                     </div>
                     <div className="formulaire">
                         <form onSubmit={handleSubmit}>

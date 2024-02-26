@@ -1,19 +1,3 @@
-// import React from "react";
-
-// const CardRealisation = ({post}) => { 
-//     return (
-//         // <h2>Card post</h2>
-//         <div classname="myposts">
-//             <h3>{post.attributes.title}</h3>
-//             <h4>{post.attributes.category}</h4>
-//             <p>{post.attributes.description}</p>
-//             {/* <img url={post.attributes.image !== null ? post.attributes.image[0].data.attributes.formats.small.url : "..."} alt={post.attributes.title}></img> */}
-//         </div>
-//     )};
-
-// export default CardRealisation;
-
-
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -21,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { Link } from 'react-router-dom';
 
 import { API_URL } from './config';
 
@@ -52,7 +37,9 @@ export default function CardRealisation({post}) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button className="showmore" size="small">Learn More</Button>
+        <Link to="/Article/1">
+          <div className="showmore"><button>Learn More</button></div>
+        </Link>
       </CardActions>
     </Card>
   );

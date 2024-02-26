@@ -13,7 +13,7 @@ const Navbar = () => {
                 <Link to="/PresentationPage">Qui suis-je ?</Link>
                 {/* <Link to="/RealisationsPage">My realisations</Link> */}
                 <Link to="/RealisationsPage">Réalisations</Link>
-                <Link to="#">Contact</Link>
+                <Link to="/ContactPage">Contact</Link>
             </div>
             <div className="social">
                 <a className="linkedin" href="https://www.linkedin.com/in/sarah-n-gotta-lagane-838143178/" target="_blank"><img src={linkedin} /></a>

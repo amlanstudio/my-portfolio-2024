@@ -1,4 +1,5 @@
 import Navbar from './Navbar';
+import Footer from './Footer';
 import Home from './Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -7,7 +8,7 @@ import PresentationPage from './PresentationPage';
 import Realisations from './Realisations';
 import RealisationsPage from "./RealisationsPage";
 import ContactPage from "./ContactPage";
-
+import Article from './Article';
 
 function App() {
 //mon portoflio
@@ -27,9 +28,11 @@ function App() {
             <Route path="/RealisationsPage" element={<RealisationsPage />} />
             <Route path="/Realisations" element={<Realisations />} />
             <Route path="/ContactPage" element={<ContactPage />} />
+            <Route path="/Article/:id" element={<Article />}/>
             <Route path="*" element={<NotFound />} />
           </Routes>
           </div>
+          <Footer/>
         </div>      
     </Router>
   );
