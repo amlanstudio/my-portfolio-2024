@@ -3,7 +3,6 @@ import eye from './img/eye.png';
 import Presentation from './Presentation';
 import ContactPage from './ContactPage';
 import { Link } from 'react-router-dom';
-import logoesiee from './img/esiee.png';
 
 
 const PresentationPage = () => {
