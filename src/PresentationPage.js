@@ -3,7 +3,8 @@ import eye from './img/eye.png';
 import Presentation from './Presentation';
 import ContactPage from './ContactPage';
 import { Link } from 'react-router-dom';
-import Footer from './Footer';
+import logoesiee from './img/esiee.png';
+
 
 const PresentationPage = () => {
 
@@ -40,61 +41,41 @@ Je suis actuellement en dernière année d'école d’ingénieur spécialisée e
                             </div>
                         </div>
             </div>
-                    <div className="parcours-vie">
-                        <div className="container">
+            <div className="parcours-vie">
                             <div className="parcours-scolaire">
-                                <h3>Qui suis-je ?</h3>
-                                <div className="graphics">
-                                    <div className="passions">
-                                        <h4>Passions</h4>
-                                        <ul>
-                                            <li>Humanitaire</li>
-                                            <li>Animatrice colonie de vacances</li>
-                                            <li>Concerts et festivals</li>
-                                            <li>Séries y films</li>
-                                        </ul>
-                                        <p>Boire du thé, cuisiner, voyager, chanter sous la douche, faire du sport (volleyball) et profiter des moments en famille.</p>
-
+                                <h3>Parcours Scolaire</h3>
+                                <div class="exp">
+                                    <div class="exp-info">
+                                        <h4>ESIPE-ESIEE Paris</h4>
+                                        <h5>2021 - Aujourd'hui</h5>
                                     </div>
-
-                                    <div className="savoir-etre">
-                                    <h4>Savoir-être <br/><br/></h4>
-                                        <div class="comp2">
-                                            <p>Créativité</p>
-                                            <p>85%</p>
-                                            <div class="conteneur-barre2"><span class="barre c85"></span></div>
-                                        </div>
-                                        <div class="comp2">
-                                            <p>Leadership</p>
-                                            <p>70%</p>
-                                            <div class="conteneur-barre2"><span class="barre c70"></span></div>
-                                        </div>
-                                        <div class="comp2">
-                                            <p>Autonomie</p>
-                                            <p>85%</p>
-                                            <div class="conteneur-barre2"><span class="barre c85"></span></div>
-                                        </div>
-                                        <div class="comp2">
-                                            <p>Polyvalence</p>
-                                            <p>95%</p>
-                                            <div class="conteneur-barre2"><span class="barre c95"></span></div>
-                                        </div>
-                                        <div class="comp2">
-                                            <p>Esprit d'équipe</p>
-                                            <p>95%</p>
-                                            <div class="conteneur-barre2"><span class="barre c95"></span></div>
-                                        </div>
+                                    <div class="exp-desc">
+                                        <h5>Diplômation : Automne 2024 </h5>
+                                        <p>Diplôme d’ingénieur Image Multimédia Audiovisuel et Communication - Spécialité WEB</p>
                                     </div>
-
-                                    <div className="savoir-faire">
-                                        <h4>Langues</h4>
+                                </div>
+                                <div class="exp">
+                                    <div class="exp-info">
+                                        <h4>IUT Paul Sabatier France</h4>
+                                        <h5>2020 - 2021</h5>
+                                    </div>
+                                    <div class="exp-desc">
+                                        <h5>Diplômation : Août 2021 </h5>
+                                        <p>Diplôme Universitaire Technologique, Métiers du Multimédia et de l’Internet</p>
+                                    </div>
+                                </div>
+                                <div class="exp">
+                                    <div class="exp-info">
+                                        <h4>INSA TOULOUSE France</h4>
+                                        <h5>2018 - 2020</h5>
+                                    </div>
+                                    <div class="exp-desc">
+                                        <h5>Diplômation : Ajournée </h5>
+                                        <p>Classe préparatoire en espagnol - École d’ingénieurs</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="qui-suis-je">
-                                <h3>Parcours Scolaire</h3>
-                            </div>
-                            <section className="expériences">
+                            <div className="experiences">
                                 <h3>Expériences</h3>
                                         
                                 <div class="exp">
@@ -144,7 +125,7 @@ Je suis actuellement en dernière année d'école d’ingénieur spécialisée e
                                         </ul>
                                     </div>
                                 </div>
-                            </section>
+                            </div>
                             <h3>Certifications</h3>
                             <div className="certifications">
                                 <div className="toiec">
@@ -160,9 +141,8 @@ Je suis actuellement en dernière année d'école d’ingénieur spécialisée e
                                    <h4>PSC1 | 2015</h4><p>À recycler !</p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-        </div>                  
+            </div> 
+        </div>
     );
 }
 

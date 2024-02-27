@@ -31,9 +31,9 @@ function App() {
             <Route path="/Article/:id" element={<Article />}/>
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <Footer/> 
           </div>
-          <Footer/>
-        </div>      
+        </div> 
     </Router>
   );
 }

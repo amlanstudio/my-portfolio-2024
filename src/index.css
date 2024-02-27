@@ -372,9 +372,25 @@ label {
 }
 
 /* -----Presentation Page ---- */
+
+.parcours-vie{
+ 
+  padding:0 100px;
+  width: 100%;
+  background:none;
+  max-width: 1600px;
+  /* margin: 0 auto; */
+  
+}
+
 .parcours-vie h3{
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 1em ;
+  background-color: #e68057;
+  padding: 15px;
+  width: fit-content;
+  color: #fefaef;
+  border-radius: 10px;
 }
 
 .home-presentation-page-text p{
@@ -413,31 +429,52 @@ section{
 }
 
 /*SECTION EXP ET FORMATION*/
-.exp{
+
+.experiences{
   display: flex;
-  /* flex-flow: row wrap; */
-  border-bottom: 1px solid #bbb;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  flex-direction: column;
 }
-.exp-info{
-  display: flex;
-flex-direction: column;
+
+.exp{
+  /* display: flex; */
+  /* flex-flow: row wrap; */
+  /* 
+  padding-bottom: 10px;
+  margin-bottom: 10px; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #bbb;
 }
 
 .exp-info{
-  flex: 0% 0% 70%;
-  /* margin-left: auto; */
+  /* display: flex;
+  flex-direction: column;
+  width: 50%; */
+  padding:10px;
+  flex: 1; 
 }
+
+.exp-desc{
+  padding:10px;
+  flex: 3;
+}
+
+
 .exp img{
   width: 100%;
 }
-.exp h3{
-  font-size:  1.2em;
-}
+
 .exp h4{
-  font-size:  1em;
+  font-size:  1.5em;
+  font-weight: medium;
+  margin-bottom: 0.5em;
+}
+
+.exp h5{
+  font-size:  1.2em;
   font-weight: normal;
+  margin-bottom: 0.5em;
 }
 
 /* Certifs */
