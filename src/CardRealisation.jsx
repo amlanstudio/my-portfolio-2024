@@ -14,7 +14,6 @@ export default function CardRealisation({post}) {
       // console.log(post.attributes.image.data[0].attributes.formats.thumbnail.url);
       // console.log(post.attributes.description.length);
   }
-  
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
@@ -37,9 +36,6 @@ export default function CardRealisation({post}) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Link to="/Article/1">
-          <div className="showmore"><button>Learn More</button></div>
-        </Link>
       </CardActions>
     </Card>
   );

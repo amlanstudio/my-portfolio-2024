@@ -1,7 +1,9 @@
+import Contact from "./Contact";
+
 const ContactPage = () => {
     return(
         <div className="cc">
-           cc
+           <Contact></Contact>
         </div>
 
     );

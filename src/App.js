@@ -8,7 +8,6 @@ import PresentationPage from './PresentationPage';
 import Realisations from './Realisations';
 import RealisationsPage from "./RealisationsPage";
 import ContactPage from "./ContactPage";
-import Article from './Article';
 
 function App() {
 //mon portoflio
@@ -23,12 +22,11 @@ function App() {
         <Navbar/>
           <div className="content">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" exact element={<Home />} />
             <Route path="/PresentationPage" element={<PresentationPage />} />
             <Route path="/RealisationsPage" element={<RealisationsPage />} />
             <Route path="/Realisations" element={<Realisations />} />
             <Route path="/ContactPage" element={<ContactPage />} />
-            <Route path="/Article/:id" element={<Article />}/>
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer/> 

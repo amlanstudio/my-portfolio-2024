@@ -1,66 +1,30 @@
 
 import React, { useState } from 'react';
+import moi from './img/moi.jpg';
 
 const Contact = () => {
 
-        const [formData, setFormData] = useState({
-            name: '',
-            email: '',
-            message: '',
-          });
-        
-          const handleChange = (e) => {
-            setFormData({ ...formData, [e.target.name]: e.target.value });
-          };
-        
-          const handleSubmit = (e) => {
-            e.preventDefault();
-        
-            // Envoyer le formulaire au serveur ici
-            fetch('/send-email', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify(formData),
-            })
-              .then(response => response.json())
-              .then(data => {
-                console.log('Réponse du serveur:', data);
-                // Gérer la réponse du serveur ici
-              })
-              .catch(error => {
-                console.error('Erreur lors de l\'envoi du formulaire:', error);
-              });
-          };
-
           return(
-           <div className="contact-zone">
+            <div className="container-con">
+<div className="contact-zone">
                 <h2>Me contacter ! </h2>
+                <h3>Des clubs sportifs aux ateliers dessins, du thé au café, je m’adonne à toutes les possibilités ! Peu importe le domaine, je me faufile, trouve ma place et m’adapte. Je suis un véritable couteau-suisse ! Captivé.e ? Et si on se recontrait, plutôt thé ou café ?</h3>
                 <div className="formulaire-zone">
                     <div className="invitation">
-                        <p>Des clubs sportifs aux ateliers dessins, du thé au café, je m’adonne à toutes les possibilités ! Peu importe le domaine, je me faufile, trouve ma place et m’adapte. Je suis un véritable couteau-suisse !
-                        <br/><br/>Captivé.e ? Et si on se recontrait, plutôt thé ou café ?</p>
+                        <img className="moi" src={moi} alt="" />
                     </div>
-                    <div className="formulaire">
-                        <form onSubmit={handleSubmit}>
-                        <label>
-                            Nom:
-                            <input type="text" name="name" value={formData.name} onChange={handleChange} />
-                        </label>
-                        <label>
-                            Email:
-                            <input type="email" name="email" value={formData.email} onChange={handleChange} />
-                        </label>
-                        <label>
-                            Message:
-                            <textarea name="message" value={formData.message} onChange={handleChange} />
-                        </label>
-                        <button type="submit">Envoyer</button>
-                    </form>
+                    <div className="formulaire">                  
+                    <iframe className="merde" src="https://docs.google.com/forms/d/e/1FAIpQLSc_f5h4CDgINwLT9t3Xk0J7kbsJgV3pevbQ5WrWpSme2jKOdw/viewform?embedded=true" 
+                   width="100%" // Utilisation de 100% de la largeur disponible
+                   height="1100"
+                   frameborder="0"
+                   marginheight="0"
+                   marginwidth="0">Chargement…</iframe>
                     </div>
                 </div>
            </div>
+            </div>
+           
             
   );
 };
