@@ -59,7 +59,7 @@ Je suis actuellement en dernière année d'école d’ingénieur spécialisée e
                                         <h5>2020 - 2021</h5>
                                     </div>
                                     <div class="exp-desc">
-                                        <h5>Diplômation : Août 2021 </h5>
+                                        <h5>Diplômation : Automne 2021 </h5>
                                         <p>Diplôme Universitaire Technologique, Métiers du Multimédia et de l’Internet</p>
                                     </div>
                                 </div>
