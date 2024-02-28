@@ -396,6 +396,10 @@ body .mcWRN{
   font-size: 1.5em;
 }
 
+.home-presentation-page-text h2{
+  font-family: 'Karla', sans-serif;
+}
+
 .graphics{
   display: flex;
   justify-content: space-between;
