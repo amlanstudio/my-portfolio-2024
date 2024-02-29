@@ -43,6 +43,10 @@ div{
   padding-right: 1em;
 }
 
+.navbar .social img:hover{
+  height:2.2em;  
+}
+
 .navbar .social .linkedin{
   
   margin-left: 1.5em;
@@ -58,7 +62,9 @@ div{
   text-decoration: none;
   padding: 6px;
   font-size: 20px;
+  transition: 0.75s;
 }
+
 
 .navbar a:hover{
   color:#e68057;
@@ -313,6 +319,7 @@ div{
 .container-con{
   background-color: #242424;
   color: #fefaef;
+  height: 50%;
 }
 .contact-zone{
   width:78%;
@@ -361,8 +368,8 @@ div{
 }
 
 .moi{
-  width:auto;
-  height: 995px;
+  width:106%;
+  height: auto;
 }
 
 body .mcWRN{
@@ -574,56 +581,93 @@ section{
 /* penser à renommer avec footer */
  .foot{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  padding: 2em;
+  padding: 5em;
   background-color: #242424;
   color:#fefaef;
-  height: 50px;
+  height: 300px;
   margin-top: 100px;
 }
 
-/*
-.contact-zone p{
+.foot a{
   background-color: #242424;
-  color:#fefaef;
 }
 
-.contact-zone h3{
+.foot img{
   background-color: #242424;
-  color:#fefaef;
 }
 
-.contact-zone a{
-  background-color: #242424;
-  color:#fefaef;
-}
-
-.top{
+.droite{
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
-.logo-contact{
-  height:4em;
-  width: auto;
-  margin: auto;
-  background-color: #242424;
-}
-
-.logo-contact a{
-  height:4em;
-  width: auto;
-  margin:auto;
-}
-
-.contact-bottom{
+.gauche{
+  width: 50%;
   display: flex;
-  flex-direction: column;
-}
-
-.links{
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-} */
+}
+
+.citation-footer{
+  display: flex;
+  align-items: center;
+  background-color: #242424;
+  color:#fefaef;
+  padding-bottom: 50px;
+}
+
+.citation-footer p{
+  background-color: #242424;
+  color:#fefaef;
+  font-size: 28px;
+  /* font-style: italic; */
+}
+
+.foot .logo{
+  height:175px;
+  /* margin-top: -130px; */
+  background-color: #242424;
+}
+
+.foot .logo:hover{
+  height:185px;
+  cursor: pointer;
+  transition: 0.75s;
+}
+
+.reseaux{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #242424;
+  padding-bottom: 50px;
+}
+
+.reseaux p{
+  color: #fefaef;
+  background-color: #242424;
+  font-size: 28px;
+}
+
+.mentions-legales p{
+  background-color: #242424;
+  color: #fefaef;
+}
+
+.reseaux img{
+  height:30px;
+  width: auto;
+  padding: 0 20px;
+  transition: 0.75s;
+}
+
+.reseaux img:hover{
+  height:40px;
+  width: auto;
+  padding: 0 20px;
+  cursor: pointer;
+  transition: 0.75s;
+}

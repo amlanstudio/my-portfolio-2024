@@ -9,7 +9,7 @@ const PresentationPage = () => {
 
     const handleDownload = () => {
         // URL de votre fichier PDF
-        const pdfUrl = './img/cv.pdf';
+        const pdfUrl = 'http://localhost:3000/pdf/cv.pdf';
         
         // Création d'un élément <a> pour démarrer le téléchargement
         const link = document.createElement('a');
