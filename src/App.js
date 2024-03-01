@@ -8,6 +8,7 @@ import PresentationPage from './PresentationPage';
 import Realisations from './Realisations';
 import RealisationsPage from "./RealisationsPage";
 import ContactPage from "./ContactPage";
+import Article from './Article';
 
 function App() {
 //mon portoflio
@@ -27,6 +28,7 @@ function App() {
             <Route path="/RealisationsPage" element={<RealisationsPage />} />
             <Route path="/Realisations" element={<Realisations />} />
             <Route path="/ContactPage" element={<ContactPage />} />
+            <Route path="/api/post/:id" element={<Article />}></Route>
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer/> 

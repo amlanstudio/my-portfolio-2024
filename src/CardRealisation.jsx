@@ -6,23 +6,16 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
+import Article from './Article';
 
 import { API_URL } from './config';
 
 export default function CardRealisation({post}) {
-  if(post.attributes.image.data){
-      // console.log(post.attributes.image.data[0].attributes.formats.thumbnail.url);
-      // console.log(post.attributes.description.length);
-  }
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         sx={{ height: 140 }}
         image={post.attributes.image.data !== null ? API_URL + post.attributes.image.data[0].attributes.formats.thumbnail.url : "..."}
-        // {post.attributes.image && post.attributes.image[0] && post.attributes.image[0].formats && (
-        //     <img src={post.attributes.image[0].formats.small.url} alt={post.attributes.title} />
-        // )}
-        title="green iguana"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="h3">
@@ -36,6 +29,9 @@ export default function CardRealisation({post}) {
         </Typography>
       </CardContent>
       <CardActions>
+        <Link to={`/api/post/${post.id}`}>
+          <div className="showmore"><button>Learn More</button></div>
+        </Link>
       </CardActions>
     </Card>
   );

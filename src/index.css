@@ -265,6 +265,9 @@ div{
   background-color: #ffffff;
 }
 
+.showmore{
+  background-color: #ffffff;
+}
 
 .showmore button{
   height: 2em;
@@ -285,6 +288,31 @@ div{
   transform: scale(1.1);
   cursor: pointer;
   transition: 0.75s;
+}
+
+.container-article{
+  padding:0 100px;
+  width: 100%;
+  background:none;
+  max-width: 1600px;
+}
+
+.mon-article{
+  padding-top: 100px;
+}
+
+.mon-article h1{
+  font-size: 46px;
+  padding-bottom: 50px;
+}
+
+.mon-article h3{
+  font-size: 28px;
+  padding-bottom: 30px;
+}
+
+.mon-article p{
+  font-size: 18px;
 }
 
 .to-realisations{
